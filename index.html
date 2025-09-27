@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy City Hotels</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-hotel text-3xl text-blue-900 mr-2"></i>
+                        <span class="text-xl font-bold text-blue-900">TEDDY CITY HOTELS</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#home" class="px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900">Home</a>
+
+                        <a href="#rooms" class="px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900">Rooms</a>
+
+                        <a href="#amenities" class="px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900">Amenities</a>
+
+                        <a href="#gallery" class="px-3 py-2 rounded-md text-lg  font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900">Gallery</a>
+
+                        <a href="#contact" class="px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900">Contact</a>
+
+                        <a href="#booking" class="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300">Book Now</a>
+
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-blue-900 hover:text-blue-700 focus:outline-none" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white shadow-lg" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 text-center">Home</a>
+                <a href="#rooms" class="block px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 text-center">Rooms</a>
+                <a href="#amenities" class="block px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 text-center">Amenities</a>
+                <a href="#gallery" class="block px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 text-center">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-lg font-medium text-gray-600 hover:text-blue-900 hover:text-blue-900 hover:border-b-2 hover:border-blue-900 text-center">Contact</a>
+                <a href="#booking" class="block px-3 py-2 rounded-md text-lg font-medium text-white bg-blue-900 hover:bg-blue-800 text-center">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="hero-content text-center px-4 sm:px-6 lg:px-8">
+            <h1 class="text-6xl md:text-8xl  font-normal mb-6 "  style=" font-family: 'Dancing Script', cursive;">Experience Unparalleled Luxury</h1>
+            <p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto">Teddy City Hotels offers the finest accommodations with breathtaking views and world-class service in the heart of the city.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#booking" class="px-8 py-3 bg-white text-blue-900 font-bold rounded-md hover:bg-gray-100 transition duration-300">Book Your Stay</a>
+                <a href="#rooms" class="px-8 py-3 border-2 border-white text-white font-bold rounded-md hover:bg-white hover:text-blue-900 transition duration-300">Explore Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6" style="font-family: 'Playwrite AU QLD', cursive;">Welcome to Teddy City Hotels</h2>
+                    <p class="text-gray-600 mb-6">Since 2021, Teddy City Hotels has been the epitome of luxury hospitality. Our commitment to excellence has earned us loyalty of discerning travelers worldwide.</p>
+                    <p class="text-gray-600 mb-8">Nestled in the vibrant city center, our hotel combines contemporary elegance with timeless comfort, offering an unforgettable experience for both business and leisure travelers.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-md">
+                            <i class="fas fa-concierge-bell text-blue-900 mr-2"></i>
+                            <span class="text-blue-900 font-medium">24/7 Concierge</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-md">
+                            <i class="fas fa-wifi text-blue-900 mr-2"></i>
+                            <span class="text-blue-900 font-medium">High-Speed WiFi</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-md">
+                            <i class="fas fa-umbrella-beach text-blue-900 mr-2"></i>
+                            <span class="text-blue-900 font-medium">Swimming Pool</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hotel Lobby" class="rounded-lg shadow-xl w-full h-auto">
+                    <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 rounded-lg shadow-lg hidden md:block">
+                        <div class="text-3xl md:text-4xl font-bold">4+</div>
+                        <div class="text-sm">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4" style="font-family: 'Playwrite AU QLD', cursive;">Our Luxurious Rooms</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Each of our rooms and suites is designed to provide the ultimate in comfort and style, with meticulous attention to detail.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img src="/image/white-bedroom-hotel.jpg" alt="Deluxe Room" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-blue-900">Deluxe Room</h3>
+                            <span class="text-blue-900 font-bold">₦90k<small class="text-gray-500 font-normal">/night</small></span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Our Deluxe Rooms offer a spacious retreat with premium amenities and stunning city views.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">King Bed</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">35 sqm</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">City View</span>
+                        </div>
+                        <a href="#booking" class="block w-full text-center py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Room 2 -->
+                <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img src="/image/point3d-commercial-imaging-ltd-5BV56SdvLmo-unsplash.jpg" alt="Executive Suite" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-blue-900">Executive Suite</h3>
+                            <span class="text-blue-900 font-bold">₦110k<small class="text-gray-500 font-normal">/night</small></span>
+                        </div>
+                        <p class="text-gray-600 mb-4">The Executive Suite features a separate living area, perfect for both work and relaxation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">King Bed</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">60 sqm</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">Panoramic View</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">Living Area</span>
+                        </div>
+                        <a href="#booking" class="block w-full text-center py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Room 3 -->
+                <div class="room-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img src="/image/reisetopia-aI6Su7Mu9Ro-unsplash.jpg" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-blue-900">Presidential Suite</h3>
+                            <span class="text-blue-900 font-bold">₦150k<small class="text-gray-500 font-normal">/night</small></span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Our most exclusive accommodation, offering unparalleled luxury with a private terrace and butler service.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">Super King Bed</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">120 sqm</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">Private Terrace</span>
+                            <span class="text-xs bg-blue-100 text-blue-900 px-2 py-1 rounded">Butler Service</span>
+                        </div>
+                        <a href="#booking" class="block w-full text-center py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-6 py-3 border-2 border-blue-900 text-blue-900 font-bold rounded-md hover:bg-blue-900 hover:text-white transition duration-300">View All Rooms</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4" style="font-family: 'Playwrite AU QLD', cursive;">World-Class Amenities</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Teddy City Hotels offers an array of premium amenities designed to enhance your stay and create unforgettable experiences.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="amenity-icon mx-auto mb-4 bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-blue-900 text-3xl">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Infinity Pool</h3>
+                    <p class="text-gray-600 text-sm">Rooftop infinity pool with panoramic city views</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mx-auto mb-4 bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-blue-900 text-3xl">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Spa & Wellness</h3>
+                    <p class="text-gray-600 text-sm">Full-service spa with premium treatments</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mx-auto mb-4 bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-blue-900 text-3xl">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Fine Dining</h3>
+                    <p class="text-gray-600 text-sm">Award-winning restaurants with world-class chefs</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="amenity-icon mx-auto mb-4 bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-blue-900 text-3xl">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Fitness Center</h3>
+                    <p class="text-gray-600 text-sm">State-of-the-art gym with personal trainers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4"  style="font-family: 'Playwrite AU QLD', cursive;">Gallery</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore the elegance and sophistication of Teddy City Hotels through our gallery.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="Hotel Lobby" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="/image/yanhao-fang-9qdAqkJYTPg-unsplash.jpg" alt="Restaurant" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1991&q=80" alt="Pool Area" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bar" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80" alt="Spa" class="w-full h-80 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1565031491910-e57fac031c41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80" alt="Event Space" class="w-full h-80
+                     object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4" style="font-family: 'Playwrite AU QLD', cursive;">Guest Experiences</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">What our guests say about their stay at Teddy City Hotels</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <!-- <i class="fas fa-star"></i> -->
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The service at Teddy City Hotels is exceptional. From the moment we arrived, every staff member went above and beyond to make our stay perfect."</p>
+                    <div class="flex items-center">
+                        <img src="/image/curtis-powell-3mMvCsW6ZYs-unsplash.jpg" alt="john nwankwo" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-blue-900">John Nwankwo</h4>
+                            <p class="text-gray-500 text-sm">Abuja, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The Presidential Suite was beyond our expectations. The attention to detail and the panoramic views made our anniversary unforgettable."</p>
+                    <div class="flex items-center">
+                        <img src="/image/etty-fidele-UBJsHb3HLv8-unsplash.jpg" alt="Chizzy Adele" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-blue-900">Chizzy Adele</h4>
+                            <p class="text-gray-500 text-sm">Accra, Ghana</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a frequent business traveler, I appreciate the seamless experience at Teddy City Hotels. The executive lounge and fast WiFi make working a pleasure."</p>
+                    <div class="flex items-center">
+                        <img src="/image/maria-lupan-Qq5ml0tIZKc-unsplash.jpg" alt="Mrs chen lee" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-blue-900">Mrs chen lee</h4>
+                            <p class="text-gray-500 text-sm">Tokyo, Japan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6" style="font-family: 'Playwrite AU QLD', cursive;" >Ready for an Unforgettable Stay?</h2>
+                    <p class="mb-8 opacity-90">Book your luxury experience at Teddy City Hotels today. Our reservation team is available 24/7 to assist with your booking and any special requests.</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-phone-alt mr-3 text-xl"></i>
+                        <div>
+                            <p class="text-sm opacity-80">Reservation Hotline</p>
+                            <p class="text-xl font-bold">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-xl"></i>
+                        <div>
+                            <p class="text-sm opacity-80">Email Us</p>
+                            <p class="text-xl font-bold">reservations@teddycityhotels.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form p-8 rounded-lg shadow-xl">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6">Book Your Room</h3>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="check-in" class="block text-gray-700 font-medium mb-2">Check-In</label>
+                                <input type="date" id="check-in" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                            </div>
+                            <div>
+                                <label for="check-out" class="block text-gray-700 font-medium mb-2">Check-Out</label>
+                                <input type="date" id="check-out" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                            </div>
+                            <div>
+                                <label for="adults" class="block text-gray-700 font-medium mb-2">Adults</label>
+                                <select id="adults" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="children" class="block text-gray-700 font-medium mb-2">Children</label>
+                                <select id="children" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <div class="md:col-span-2">
+                                <label for="room-type" class="block text-gray-700 font-medium mb-2">Room Type</label>
+                                <select id="room-type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                                    <option>Deluxe Room</option>
+                                    <option>Executive Suite</option>
+                                    <option>Presidential Suite</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full mt-6 py-3 bg-blue-900 text-white font-bold rounded-md hover:bg-blue-800 transition duration-300">Check Availability</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4"  style="font-family: 'Playwrite AU QLD', cursive;">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We'd love to hear from you. Reach out to us for any inquiries or special requests.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="mx-auto mb-4 bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-900 text-2xl">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Address</h3>
+                    <p class="text-gray-600">123 Luxury Avenue<br>Teddy City, TC 10001</p>
+                </div>
+                
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="mx-auto mb-4 bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-900 text-2xl">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Phone</h3>
+                    <p class="text-gray-600">+1 (555) 123-4567<br>+1 (555) 765-4321</p>
+                </div>
+                
+                <div class="text-center p-6 bg-blue-50 rounded-lg">
+                    <div class="mx-auto mb-4 bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center text-blue-900 text-2xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Email</h3>
+                    <p class="text-gray-600">info@teddycityhotels.com<br>reservations@teddycityhotels.com</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-blue-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-6 text-center">Send Us a Message</h3>
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-6 px-6 py-3 bg-blue-900 text-white font-bold rounded-md hover:bg-blue-800 transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-4 lg:px-8 text-center">
+            <h2 class="text-2xl md:text-3xl  font-bold mb-4"  style="font-family: 'Playwrite AU QLD', cursive;">Stay Updated</h2>
+            <p class="mb-8 opacity-90 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, events, and news from Teddy City Hotels.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-900">
+                <button type="submit" class="px-6 py-3 bg-white text-blue-900 font-bold rounded-md hover:bg-gray-100 transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hotel text-3xl text-white mr-2"></i>
+                        <span class="text-xl font-bold">TEDDY CITY HOTELS</span>
+                    </div>
+                    <p class="text-blue-200 mb-4">Redefining luxury hospitality with impeccable service and extraordinary experiences.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-200 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+                        <li><a href="#rooms" class="text-blue-200 hover:text-white">Rooms & Suites</a></li>
+                        <li><a href="#amenities" class="text-blue-200 hover:text-white">Amenities</a></li>
+                        <li><a href="#gallery" class="text-blue-200 hover:text-white">Gallery</a></li>
+                        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Spa & Wellness</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Dining</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Meeting & Events</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Weddings</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Transportation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Cookie Policy</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Accessibility</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-200 mb-4 md:mb-0">© 2025 Teddy City Hotels. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-blue-200 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-blue-200 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-blue-200 hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
